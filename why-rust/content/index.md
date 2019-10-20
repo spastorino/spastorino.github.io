@@ -29,16 +29,16 @@ count: false
 
 # Who is using Rust?
 
-- **Mozilla** - Stylo, WebRender.
-- **Google** - Fuchsia operating system.
-- **Facebook** - Libra.
+- **Mozilla** - Servo, Stylo, WebRender.
+- **Google** - Fuchsia operating system, crosvm.
+- **Facebook** - Libra, Mononoke, Mercurial and HHVM.
 - **Amazon** - Firecracker.
 - **Microsoft** - Azure IoT work.
 - **Dropbox** - Storage system.
 
 You can see even more familiar names like **Twitter**, **npm**, **Red Hat**, **Reddit**, **Samsung**, **Cloudflare**, **Gnome**, **Chef**, **Canonical**, **Coursera**, **Tor** and many more.
 
-Being used also for **WebAssembly**, **Web APIs**, **Blockchain**, **Networking**, **Embedded**, **Games**. **Native Extensions**, etc.
+Being used also for **WebAssembly**, **Blockchain**, **Networking**, **Embedded**, **Games**. **Native Extensions**, **Web APIs**, etc.
 
 ---
 
