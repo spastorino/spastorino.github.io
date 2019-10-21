@@ -33,12 +33,12 @@ count: false
 - **Google** - Fuchsia operating system, crosvm.
 - **Facebook** - Libra, Mononoke, Mercurial and HHVM.
 - **Amazon** - Firecracker.
-- **Microsoft** - Azure IoT work.
+- **Microsoft** - Azure IoT, VSCode, other things.
 - **Dropbox** - Storage system.
 
 You can see even more familiar names like **Twitter**, **npm**, **Red Hat**, **Reddit**, **Samsung**, **Cloudflare**, **Gnome**, **Chef**, **Canonical**, **Coursera**, **Tor** and many more.
 
-Being used also for **WebAssembly**, **Blockchain**, **Networking**, **Embedded**, **Games**. **Native Extensions**, **Web APIs**, etc.
+Being used also for **Blockchain**, **Networking**, **Embedded**, **Games**, **WebAssembly**, **Native Extensions**, **Web APIs**, etc.
 
 ---
 
