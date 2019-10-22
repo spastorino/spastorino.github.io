@@ -40,6 +40,18 @@ You can see even more familiar names like **Twitter**, **npm**, **Red Hat**, **R
 
 Being used also for **Blockchain**, **Networking**, **Embedded**, **Games**, **WebAssembly**, **Native Extensions**, **Web APIs**, etc.
 
+???
+
+- Servo a parallel designed for both application and embedded use and aimsto achieve parallelism, security, modularity, and performance.
+- Stylo integrate Servo's CSS style system into Gecko
+- WebRender A GPU-based renderer for the web, render backend for Servo
+- Fuchsia, new OS microkernel for embedded and personal computers. Tal vez remplazo de Android.
+- crosvm es un Virtual Machine Monitor / hipervisor
+- Libra blockchain digital currency
+- Mononoke and Mercurial, Mercurial server and client
+- HHVM virtual machine to execute hack and php programs
+- Firecracker virtualization technology for serverless computing
+
 ---
 
 <img src="content/images/technology-radar.png" alt="Thoughtworks Radar">
@@ -84,6 +96,18 @@ Lot of interest in Rust, some of our clients are already using it.
 # Performance
 
 <img src="content/images/performance.png" alt="Performance Rust/C/C++">
+
+---
+
+# Performance
+
+<img src="content/images/web-benchs-1.png" alt="Web benchs multiple queries">
+
+---
+
+# Performance
+
+<img src="content/images/web-benchs-2.png" alt="Web benchs data updates">
 
 ---
 
@@ -221,7 +245,7 @@ func foo() {
 .col-right[
 ```go
 // The other goroutine
-`gift := <- channel`
+gift := <- channel
 gift.open()
 ```
 ]
@@ -516,6 +540,72 @@ However:
 
 ---
 
+# Ownership
+
+```rust
+fn foo() {
+  let `gift` = Gift::new();
+  channel.send(`gift`);
+  gift.open();
+}
+```
+
+.col-right[
+````rust
+impl<T> Channel<T> {
+  fn send(&mut self, `data`: T) {
+    // ...
+  }
+}
+```
+]
+
+---
+
+# Ownership
+
+```rust
+fn foo() {
+  let gift = Gift::new();
+  channel.send(gift);
+  `gift`.open();
+}
+```
+
+.col-right[
+````rust
+impl<T> Channel<T> {
+  fn send(&mut self, data: T) {
+    // ...
+  }
+}
+```
+]
+
+---
+
+# Borrowing
+
+```rust
+fn foo() {
+  let gift = Gift::new();
+  channel.send(gift);
+  gift.open();
+}
+```
+
+.col-right[
+````rust
+impl<T> Channel<T> {
+  fn send(`&mut self`, data: T) {
+    // ...
+  }
+}
+```
+]
+
+---
+
 # High-level code
 
 ```rust
@@ -643,6 +733,33 @@ fn print_first(v: Vec<String>) {
     None => println!("Not found"),
   }
 }
+```
+
+---
+
+# No null pointers
+
+```rust
+fn print_first(v: Vec<String>) {
+  let s = v.first();
+  println!("{}", s.to_uppercase());
+}
+```
+
+--
+
+
+```
+error[E0599]: no method named `to_uppercase` found for type `Option<&String>`
+              in the current scope
+ --> src/main.rs:3:20
+  |
+3 |   println!("{}", s.to_uppercase());
+  |                    ^^^^^^^^^^^^
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0599`.
 ```
 
 ---
