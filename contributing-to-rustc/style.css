@@ -32,10 +32,6 @@ h3 {
   color: grey;
 }
 
-.grey a {
-  color: grey;
-}
-
 .small {
   font-size: 60%;
 }
@@ -58,7 +54,7 @@ h2 {
 
 img {
   margin-top: 1rem;
-  max-width: 100%;
+  max-width: 90%;
   max-height: 32rem;
 }
 
@@ -99,6 +95,10 @@ pre {
 td pre {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+a {
+  color: grey;
 }
 
 .remark-notes-current-area {
