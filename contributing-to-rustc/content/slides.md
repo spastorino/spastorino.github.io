@@ -15,8 +15,9 @@ https://github.com/spastorino/contributing-to-rustc
 
 ???
 
-Ask them to copy the link, get the qr code
-Introduce ourselves
+- Welcome
+- Copy the link
+- Introduce ourselves
 
 ---
 
@@ -26,8 +27,10 @@ Introduce ourselves
 
 ???
 
-This is a hands on workshop.
-Where you would learn by doing.
+- Get excited about contributing
+- This is a hands on workshop
+- Where you would learn by doing
+- It takes a LOT of time to really learn the compiler and probably nobody understands it all
 
 ---
 
@@ -49,7 +52,8 @@ Share our experience about how and why did we get into the compiler
 
 ???
 
-You would find everything you need in the Rustc Dev Guide
+- You would find everything you need in the Rustc Dev Guide
+- Take one minute to open the guide and navigate it together
 
 ---
 
@@ -61,8 +65,14 @@ You would find everything you need in the Rustc Dev Guide
 - Rust development environment
     - Text editor or IDE
     - Git (and basic Git knowledge)
-- Clone the workshop compiler repo (https://github.com/spastorino/contributing-to-rustc.git) and build/test
+- Clone the workshop compiler repo (https://github.com/spastorino/contributing-to-rustc-exercises.git) and build/test
     - Useful guide: https://rustc-dev-guide.rust-lang.org/building/how-to-build-and-run.html (1.1, 1.2, 1.3)
+
+???
+
+- Did you get a message with these instructions?
+- Did you all do this already?
+- Don't worry if you didn't
 
 ---
 
@@ -71,19 +81,18 @@ You would find everything you need in the Rustc Dev Guide
 Guide: https://rustc-dev-guide.rust-lang.org/building/prerequisites.html
 
 ```
-# clone the repo
+# clone the repo, there's no need to do ./x setup as the repo already
+# includes a config.toml and run all ui tests as a way to check that
+# everything works
 git clone https://github.com/spastorino/contributing-to-rustc-exercises.git
 cd contributing-to-rustc-exercises
-
-# no need to ./x setup as the repo already includes a config.toml
-
-# run all ui tests as a way to check that everything works
 ./x test tests/ui
 ```
 
 ???
 
-x.py is the build tool for the rust repository. It can build docs, run tests, and compile the compiler and standard library.
+- x.py is the build tool for the rust repository
+- It can build docs, run tests, and compile the compiler and standard library.
 
 ---
 
@@ -95,8 +104,8 @@ https://rustc-dev-guide.rust-lang.org/building/suggested.html#configuring-rust-a
 
 ???
 
-There are instructions to set up rust-analyzer for vscode
-Use whatever you feel more comfortable with
+- There are instructions to set up rust-analyzer for vscode
+- Use whatever you feel more comfortable with
 
 ---
 
@@ -106,7 +115,7 @@ Use whatever you feel more comfortable with
 
 ???
 
-Don't worry too much about this
+- Don't worry too much about this
 
 ---
 
@@ -120,9 +129,9 @@ Don't worry too much about this
 
 ???
 
-Learn by doing is a great way
-Hack and read as you go
-Live demo (playground, godbolt, add test)
+- Learn by doing is a great way to learn
+- Hack and read as you go
+- Live demo (playground, godbolt, add test)
 
 ---
 

@@ -8,6 +8,7 @@
 !_TAG_FIELD_DESCRIPTION	name	/tag name/
 !_TAG_FIELD_DESCRIPTION	pattern	/pattern/
 !_TAG_FIELD_DESCRIPTION	typeref	/Type and name of a variable or typedef/
+!_TAG_FIELD_DESCRIPTION!XML	uri	/uri associated with name prefix/
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
 !_TAG_KIND_DESCRIPTION!CSS	c,class	/classes/
@@ -40,6 +41,10 @@
 !_TAG_KIND_DESCRIPTION!Markdown	s,section	/sections/
 !_TAG_KIND_DESCRIPTION!Markdown	t,subsubsection	/level 3 sections/
 !_TAG_KIND_DESCRIPTION!Markdown	u,l5subsection	/level 5 sections/
+!_TAG_KIND_DESCRIPTION!SVG	d,def	/ids in defs tags/
+!_TAG_KIND_DESCRIPTION!XML	i,id	/id attributes/
+!_TAG_KIND_DESCRIPTION!XML	n,nsprefix	/namespace prefixes/
+!_TAG_KIND_DESCRIPTION!XML	r,root	/root elements/
 !_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
 !_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
 !_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
@@ -48,6 +53,8 @@
 !_TAG_PARSER_VERSION!HTML	0.0	/current.age/
 !_TAG_PARSER_VERSION!JavaScript	1.1	/current.age/
 !_TAG_PARSER_VERSION!Markdown	1.1	/current.age/
+!_TAG_PARSER_VERSION!SVG	0.0	/current.age/
+!_TAG_PARSER_VERSION!XML	0.0	/current.age/
 !_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
 !_TAG_PROC_CWD	/home/santiago/src/personal/blog/static/contributing-to-rustc/	//
 !_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
@@ -128,7 +135,6 @@
 .goldnordelish	style.css	/^.goldnordelish {$/;"	c
 .gologo img	style.css	/^.gologo img {$/;"	s
 .grey	style.css	/^.grey {$/;"	c
-.grey a	style.css	/^.grey a {$/;"	s
 .group	style.css	/^.group {}$/;"	c
 .hidden	style.css	/^.hidden {$/;"	c
 .hide	style.css	/^.hide {$/;"	c
@@ -208,10 +214,7 @@
 0	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	M	class:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.AnonymousClassbd4eea9e6eb01
 <	remark-latest.min.js	/^a.relevance>r.relevance&&(s=r,r=a)}),s.language&&(r.second_best=s),r}function u(e){return N.tabR/;"	p	variable:anonymousObjectbd4eea9e8005
 >	remark-latest.min.js	/^a.relevance>r.relevance&&(s=r,r=a)}),s.language&&(r.second_best=s),r}function u(e){return N.tabR/;"	p	variable:anonymousObjectbd4eea9e8005
-About us	content/slides.md	/^# About us$/;"	c
 AnonymousClassbd4eea9e6eb01	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	c	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r
-Background	exercises/ice-mutable-const.md	/^## Background$/;"	s
-Background	exercises/ice-rpitit-no-body.md	/^## Background$/;"	s
 C	remark-latest.min.js	/^beginKeywords:"class interface",end:\/[{;=]\/,illegal:\/[^\\s:]\/,contains:[e.TITLE_MODE,e.C_LIN/;"	v	method:anonymousObjectbd4eea9e21405.create
 CODE	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
 CONTENT	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
@@ -219,27 +222,24 @@ Contributing to the Rust Compiler Workshop	content/slides.md	/^# Contributing to
 Contributing to the Rust Compiler Workshop - Santiago Pastorino & Jack Huey	index.html	/^    <title>Contributing to the Rust Compiler Workshop - Santiago Pastorino & Jack Huey<\/title>$/;"	j
 DEF	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
 Debugging	content/slides.md	/^# Debugging$/;"	c
-Diagnostics	content/slides.md	/^### Diagnostics$/;"	S	section:Debugging""Exercises
 E	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	c	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r
 E	remark-latest.min.js	/^beginKeywords:"class interface",end:\/[{;=]\/,illegal:\/[^\\s:]\/,contains:[e.TITLE_MODE,e.C_LIN/;"	v	method:anonymousObjectbd4eea9e21405.create
 Editor	content/slides.md	/^# Editor$/;"	c
-Exercises	content/slides.md	/^## Exercises$/;"	s	chapter:Debugging
+Exercises	content/slides.md	/^# Exercises$/;"	c
 FENCES	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
-Features	content/slides.md	/^### Features$/;"	S	section:Debugging""Exercises
 Getting started	content/slides.md	/^# Getting started$/;"	c
 How did we get started?	content/slides.md	/^# How did we get started?$/;"	c
-ICEs	content/slides.md	/^### ICEs$/;"	S	section:Debugging""Exercises
 INLINE_CODE	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
 MACRO	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
 NOTES_SEPARATOR	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
 Objectives	content/slides.md	/^# Objectives$/;"	c
 Overview of the compiler	content/slides.md	/^# Overview of the compiler$/;"	c
+Prerequisites and requirements	content/slides.md	/^# Prerequisites and requirements$/;"	c
 Quickstart	content/slides.md	/^# Quickstart$/;"	c
 S	remark-latest.min.js	/^beginKeywords:"class interface",end:\/[{;=]\/,illegal:\/[^\\s:]\/,contains:[e.TITLE_MODE,e.C_LIN/;"	v	method:anonymousObjectbd4eea9e21405.create
 SEPARATOR	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
-Test	exercises/ice-mutable-const.md	/^## Test$/;"	s
-Test	exercises/ice-rpitit-no-body.md	/^## Test$/;"	s
 Thanks	content/slides.md	/^# Thanks$/;"	c
+Tracing	content/slides.md	/^# Tracing$/;"	c
 What's next for me?	content/slides.md	/^# What's next for me?$/;"	c
 Working on an issue	content/slides.md	/^# Working on an issue$/;"	c
 [r]	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	M	class:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.AnonymousClassbd4eea9e6eb01
@@ -306,6 +306,7 @@ a	remark-latest.min.js	/^},{className:"meta",begin:"#\\\\!?\\\\[",end:"\\\\]",co
 a	remark-latest.min.js	/^},{className:"meta",begin:"#\\\\!?\\\\[",end:"\\\\]",contains:[{className:"meta-string",begin:\//;"	v	method:anonymousObjectbd4eea9e59305.create
 a	remark-latest.min.js	/^},{className:"meta",begin:"#\\\\!?\\\\[",end:"\\\\]",contains:[{className:"meta-string",begin:\//;"	v	method:anonymousObjectbd4eea9e5af05.create
 a	remark-latest.min.js	/^},{className:"meta",begin:"#\\\\!?\\\\[",end:"\\\\]",contains:[{className:"meta-string",begin:\//;"	v	method:anonymousObjectbd4eea9e5c005.create
+a	style.css	/^a {$/;"	s
 addClass	remark-latest.min.js	/^containerLayout:'<div class="remark-notes-area">\\n  <div class="remark-top-area">\\n    <div cl/;"	f	variable:a
 agate	remark-latest.min.js	/^built_in:"ip eip rip al ah bl bh cl ch dl dh sil dil bpl spl r8b r9b r10b r11b r12b r13b r14b r1/;"	p	property:t.exports.styles
 align	remark-latest.min.js	/^require=function e(t,a,r){function s(i,l){if(!a[i]){if(!t[i]){var o="function"==typeof require&&/;"	p	variable:anonymousFunctionbd4eea9e0700.anonymousObjectbd4eea9e2305
@@ -6985,6 +6986,7 @@ nomarkup	remark-latest.min.js	/^a.relevance>r.relevance&&(s=r,r=a)}),s.language&
 notes	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	M	class:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.AnonymousClassbd4eea9e6eb01
 nptable	remark-latest.min.js	/^require=function e(t,a,r){function s(i,l){if(!a[i]){if(!t[i]){var o="function"==typeof require&&/;"	p	variable:anonymousFunctionbd4eea9e0700.m.u
 nptable	remark-latest.min.js	/^require=function e(t,a,r){function s(i,l){if(!a[i]){if(!t[i]){var o="function"==typeof require&&/;"	p	variable:anonymousObjectbd4eea9e1305
+ns5058e97f0101	content/rust-logo-blk.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" x="0px" y="0px" width="144px" height="144px" viewbox/;"	n	uri:http://www.w3.org/2000/svg
 o	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	f	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r
 o	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	m	class:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.AnonymousClassbd4eea9e6eb01
 o	remark-latest.min.js	/^beginKeywords:"class interface",end:\/[{;=]\/,illegal:\/[^\\s:]\/,contains:[e.TITLE_MODE,e.C_LIN/;"	v	method:anonymousObjectbd4eea9e25005.create
