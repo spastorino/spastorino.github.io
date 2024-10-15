@@ -158,6 +158,7 @@
 .line8 img	style.css	/^.line8 img {$/;"	s
 .mark	style.css	/^.mark {$/;"	c
 .me	style.css	/^.me {$/;"	c
+.medium li ul	style.css	/^.medium li ul {$/;"	s
 .modern-conveniences	style.css	/^.modern-conveniences {$/;"	c
 .no-hide .hidden	style.css	/^.no-hide .hidden {$/;"	c
 .one-dot-oh img	style.css	/^.one-dot-oh img {$/;"	s
@@ -215,6 +216,24 @@
 <	remark-latest.min.js	/^a.relevance>r.relevance&&(s=r,r=a)}),s.language&&(r.second_best=s),r}function u(e){return N.tabR/;"	p	variable:anonymousObjectbd4eea9e8005
 >	remark-latest.min.js	/^a.relevance>r.relevance&&(s=r,r=a)}),s.language&&(r.second_best=s),r}function u(e){return N.tabR/;"	p	variable:anonymousObjectbd4eea9e8005
 AnonymousClassbd4eea9e6eb01	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	c	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r
+Background	exercises/diag-diff-methods-assoc-fns.md	/^## Background$/;"	s
+Background	exercises/diag-more-acc-span.md	/^## Background$/;"	s
+Background	exercises/feat-machine-applicable-lint.md	/^## Background$/;"	s
+Background	exercises/feat-pinneaple-pizza.md	/^## Background$/;"	s
+Background	exercises/feat-unsafe-extern-blocks.md	/^## Background$/;"	s
+Background	exercises/ice-mutable-const.md	/^## Background$/;"	s
+Background	exercises/ice-no-fn_arg_names.md	/^## Background$/;"	s
+Background	exercises/ice-rpitit-no-body.md	/^## Background$/;"	s
+Background	exercises/ice-trait-no-impl-rpitit.md	/^## Background$/;"	s
+Branch	exercises/diag-diff-methods-assoc-fns.md	/^## Branch$/;"	s
+Branch	exercises/diag-more-acc-span.md	/^## Branch$/;"	s
+Branch	exercises/feat-machine-applicable-lint.md	/^## Branch$/;"	s
+Branch	exercises/feat-pinneaple-pizza.md	/^## Branch$/;"	s
+Branch	exercises/feat-unsafe-extern-blocks.md	/^## Branch$/;"	s
+Branch	exercises/ice-mutable-const.md	/^## Branch$/;"	s
+Branch	exercises/ice-no-fn_arg_names.md	/^## Branch$/;"	s
+Branch	exercises/ice-rpitit-no-body.md	/^## Branch$/;"	s
+Branch	exercises/ice-trait-no-impl-rpitit.md	/^## Branch$/;"	s
 C	remark-latest.min.js	/^beginKeywords:"class interface",end:\/[{;=]\/,illegal:\/[^\\s:]\/,contains:[e.TITLE_MODE,e.C_LIN/;"	v	method:anonymousObjectbd4eea9e21405.create
 CODE	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
 CONTENT	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
@@ -238,6 +257,10 @@ Prerequisites and requirements	content/slides.md	/^# Prerequisites and requireme
 Quickstart	content/slides.md	/^# Quickstart$/;"	c
 S	remark-latest.min.js	/^beginKeywords:"class interface",end:\/[{;=]\/,illegal:\/[^\\s:]\/,contains:[e.TITLE_MODE,e.C_LIN/;"	v	method:anonymousObjectbd4eea9e21405.create
 SEPARATOR	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
+Test	exercises/ice-mutable-const.md	/^## Test$/;"	s
+Test	exercises/ice-no-fn_arg_names.md	/^## Test$/;"	s
+Test	exercises/ice-rpitit-no-body.md	/^## Test$/;"	s
+Test	exercises/ice-trait-no-impl-rpitit.md	/^## Test$/;"	s
 Thanks	content/slides.md	/^# Thanks$/;"	c
 Tracing	content/slides.md	/^# Tracing$/;"	c
 What's next for me?	content/slides.md	/^# What's next for me?$/;"	c
@@ -4518,6 +4541,10 @@ classPrefix	remark-latest.min.js	/^a.relevance>r.relevance&&(s=r,r=a)}),s.langua
 classes	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousObjectbd4eea9e6be05
 clientHeight	remark-latest.min.js	/^containerLayout:'<div class="remark-notes-area">\\n  <div class="remark-top-area">\\n    <div cl/;"	p	variable:anonymousObjectbd4eea9e72705
 clientWidth	remark-latest.min.js	/^containerLayout:'<div class="remark-notes-area">\\n  <div class="remark-top-area">\\n    <div cl/;"	p	variable:anonymousObjectbd4eea9e72705
+clust18	content/high-level-overview.svg	/^<g id="clust18" class="cluster">$/;"	i
+clust27	content/high-level-overview.svg	/^<g id="clust27" class="cluster">$/;"	i
+clust7	content/high-level-overview.svg	/^<g id="clust7" class="cluster">$/;"	i
+clust8	content/high-level-overview.svg	/^<g id="clust8" class="cluster">$/;"	i
 code	remark-latest.min.js	/^require=function e(t,a,r){function s(i,l){if(!a[i]){if(!t[i]){var o="function"==typeof require&&/;"	p	variable:anonymousFunctionbd4eea9e0700.m.u
 code	remark-latest.min.js	/^require=function e(t,a,r){function s(i,l){if(!a[i]){if(!t[i]){var o="function"==typeof require&&/;"	p	variable:h
 codepen-embed	remark-latest.min.js	/^"atelier-lakeside-light":".hljs-atelier-lakeside-light .hljs-comment,.hljs-atelier-lakeside-ligh/;"	p	property:t.exports.styles
@@ -5229,6 +5256,39 @@ e	remark-latest.min.js	/^require=function e(t,a,r){function s(i,l){if(!a[i]){if(
 e	remark-latest.min.js	/^require=function e(t,a,r){function s(i,l){if(!a[i]){if(!t[i]){var o="function"==typeof require&&/;"	f
 e	remark-latest.min.js	/^require=function e(t,a,r){function s(i,l){if(!a[i]){if(!t[i]){var o="function"==typeof require&&/;"	f	function:anonymousFunctionbd4eea9e0700
 e	remark-latest.min.js	/^require=function e(t,a,r){function s(i,l){if(!a[i]){if(!t[i]){var o="function"==typeof require&&/;"	f	function:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.l
+edge1	content/high-level-overview.svg	/^<g id="edge1" class="edge">$/;"	i
+edge10	content/high-level-overview.svg	/^<g id="edge10" class="edge">$/;"	i
+edge11	content/high-level-overview.svg	/^<g id="edge11" class="edge">$/;"	i
+edge12	content/high-level-overview.svg	/^<g id="edge12" class="edge">$/;"	i
+edge13	content/high-level-overview.svg	/^<g id="edge13" class="edge">$/;"	i
+edge14	content/high-level-overview.svg	/^<g id="edge14" class="edge">$/;"	i
+edge15	content/high-level-overview.svg	/^<g id="edge15" class="edge">$/;"	i
+edge16	content/high-level-overview.svg	/^<g id="edge16" class="edge">$/;"	i
+edge17	content/high-level-overview.svg	/^<g id="edge17" class="edge">$/;"	i
+edge18	content/high-level-overview.svg	/^<g id="edge18" class="edge">$/;"	i
+edge19	content/high-level-overview.svg	/^<g id="edge19" class="edge">$/;"	i
+edge2	content/high-level-overview.svg	/^<g id="edge2" class="edge">$/;"	i
+edge20	content/high-level-overview.svg	/^<g id="edge20" class="edge">$/;"	i
+edge21	content/high-level-overview.svg	/^<g id="edge21" class="edge">$/;"	i
+edge22	content/high-level-overview.svg	/^<g id="edge22" class="edge">$/;"	i
+edge23	content/high-level-overview.svg	/^<g id="edge23" class="edge">$/;"	i
+edge24	content/high-level-overview.svg	/^<g id="edge24" class="edge">$/;"	i
+edge25	content/high-level-overview.svg	/^<g id="edge25" class="edge">$/;"	i
+edge26	content/high-level-overview.svg	/^<g id="edge26" class="edge">$/;"	i
+edge27	content/high-level-overview.svg	/^<g id="edge27" class="edge">$/;"	i
+edge28	content/high-level-overview.svg	/^<g id="edge28" class="edge">$/;"	i
+edge29	content/high-level-overview.svg	/^<g id="edge29" class="edge">$/;"	i
+edge3	content/high-level-overview.svg	/^<g id="edge3" class="edge">$/;"	i
+edge30	content/high-level-overview.svg	/^<g id="edge30" class="edge">$/;"	i
+edge31	content/high-level-overview.svg	/^<g id="edge31" class="edge">$/;"	i
+edge32	content/high-level-overview.svg	/^<g id="edge32" class="edge">$/;"	i
+edge33	content/high-level-overview.svg	/^<g id="edge33" class="edge">$/;"	i
+edge4	content/high-level-overview.svg	/^<g id="edge4" class="edge">$/;"	i
+edge5	content/high-level-overview.svg	/^<g id="edge5" class="edge">$/;"	i
+edge6	content/high-level-overview.svg	/^<g id="edge6" class="edge">$/;"	i
+edge7	content/high-level-overview.svg	/^<g id="edge7" class="edge">$/;"	i
+edge8	content/high-level-overview.svg	/^<g id="edge8" class="edge">$/;"	i
+edge9	content/high-level-overview.svg	/^<g id="edge9" class="edge">$/;"	i
 em	remark-latest.min.js	/^require=function e(t,a,r){function s(i,l){if(!a[i]){if(!t[i]){var o="function"==typeof require&&/;"	p	variable:anonymousObjectbd4eea9e2805
 em	remark-latest.min.js	/^require=function e(t,a,r){function s(i,l){if(!a[i]){if(!t[i]){var o="function"==typeof require&&/;"	p	variable:h
 end	remark-latest.min.js	/^a.relevance>r.relevance&&(s=r,r=a)}),s.language&&(r.second_best=s),r}function u(e){return N.tabR/;"	p	property:anonymousObjectbd4eea9ed205.create.anonymousObjectbd4eea9ed405.starts
@@ -6214,6 +6274,7 @@ getClasses	remark-latest.min.js	/^containerLayout:'<div class="remark-notes-area
 getPrefixedProperty	remark-latest.min.js	/^containerLayout:'<div class="remark-notes-area">\\n  <div class="remark-top-area">\\n    <div cl/;"	f	variable:a
 getSlideIndex	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	f	variable:r
 gfm	remark-latest.min.js	/^require=function e(t,a,r){function s(i,l){if(!a[i]){if(!t[i]){var o="function"==typeof require&&/;"	p	variable:anonymousObjectbd4eea9e6005
+graph0	content/high-level-overview.svg	/^<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(36 1093.2)">$/;"	i
 h	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	f	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r
 h	remark-latest.min.js	/^a.relevance>r.relevance&&(s=r,r=a)}),s.language&&(r.second_best=s),r}function u(e){return N.tabR/;"	f
 h	remark-latest.min.js	/^a.relevance>r.relevance&&(s=r,r=a)}),s.language&&(r.second_best=s),r}function u(e){return N.tabR/;"	v	method:anonymousObjectbd4eea9e9205.create
@@ -6981,12 +7042,36 @@ name	remark-latest.min.js	/^},{className:"meta",begin:"#\\\\!?\\\\[",end:"\\\\]"
 newline	remark-latest.min.js	/^require=function e(t,a,r){function s(i,l){if(!a[i]){if(!t[i]){var o="function"==typeof require&&/;"	p	variable:anonymousFunctionbd4eea9e0700.m.u
 node	remark-latest.min.js	/^require=function e(t,a,r){function s(i,l){if(!a[i]){if(!t[i]){var o="function"==typeof require&&/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.l.e.anonymousObjectbd4eea9e6d05
 node	remark-latest.min.js	/^require=function e(t,a,r){function s(i,l){if(!a[i]){if(!t[i]){var o="function"==typeof require&&/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.l.e.anonymousObjectbd4eea9e6e05
+node1	content/high-level-overview.svg	/^<g id="node1" class="node">$/;"	i
+node10	content/high-level-overview.svg	/^<g id="node10" class="node">$/;"	i
+node11	content/high-level-overview.svg	/^<g id="node11" class="node">$/;"	i
+node12	content/high-level-overview.svg	/^<g id="node12" class="node">$/;"	i
+node13	content/high-level-overview.svg	/^<g id="node13" class="node">$/;"	i
+node14	content/high-level-overview.svg	/^<g id="node14" class="node">$/;"	i
+node15	content/high-level-overview.svg	/^<g id="node15" class="node">$/;"	i
+node16	content/high-level-overview.svg	/^<g id="node16" class="node">$/;"	i
+node17	content/high-level-overview.svg	/^<g id="node17" class="node">$/;"	i
+node18	content/high-level-overview.svg	/^<g id="node18" class="node">$/;"	i
+node19	content/high-level-overview.svg	/^<g id="node19" class="node">$/;"	i
+node2	content/high-level-overview.svg	/^<g id="node2" class="node">$/;"	i
+node20	content/high-level-overview.svg	/^<g id="node20" class="node">$/;"	i
+node21	content/high-level-overview.svg	/^<g id="node21" class="node">$/;"	i
+node22	content/high-level-overview.svg	/^<g id="node22" class="node">$/;"	i
+node23	content/high-level-overview.svg	/^<g id="node23" class="node">$/;"	i
+node3	content/high-level-overview.svg	/^<g id="node3" class="node">$/;"	i
+node4	content/high-level-overview.svg	/^<g id="node4" class="node">$/;"	i
+node5	content/high-level-overview.svg	/^<g id="node5" class="node">$/;"	i
+node6	content/high-level-overview.svg	/^<g id="node6" class="node">$/;"	i
+node7	content/high-level-overview.svg	/^<g id="node7" class="node">$/;"	i
+node8	content/high-level-overview.svg	/^<g id="node8" class="node">$/;"	i
+node9	content/high-level-overview.svg	/^<g id="node9" class="node">$/;"	i
 nolink	remark-latest.min.js	/^require=function e(t,a,r){function s(i,l){if(!a[i]){if(!t[i]){var o="function"==typeof require&&/;"	p	variable:h
 nomarkup	remark-latest.min.js	/^a.relevance>r.relevance&&(s=r,r=a)}),s.language&&(r.second_best=s),r}function u(e){return N.tabR/;"	p	property:anonymousObjectbd4eea9ed205.create.anonymousObjectbd4eea9ed405.keywords
 notes	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	M	class:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.AnonymousClassbd4eea9e6eb01
 nptable	remark-latest.min.js	/^require=function e(t,a,r){function s(i,l){if(!a[i]){if(!t[i]){var o="function"==typeof require&&/;"	p	variable:anonymousFunctionbd4eea9e0700.m.u
 nptable	remark-latest.min.js	/^require=function e(t,a,r){function s(i,l){if(!a[i]){if(!t[i]){var o="function"==typeof require&&/;"	p	variable:anonymousObjectbd4eea9e1305
 ns5058e97f0101	content/rust-logo-blk.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" x="0px" y="0px" width="144px" height="144px" viewbox/;"	n	uri:http://www.w3.org/2000/svg
+ns98cc36d60101	content/high-level-overview.svg	/^ --><!-- Title: rustc_areas Pages: 1 --><svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink=/;"	n	uri:http://www.w3.org/2000/svg
 o	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	f	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r
 o	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	m	class:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.AnonymousClassbd4eea9e6eb01
 o	remark-latest.min.js	/^beginKeywords:"class interface",end:\/[{;=]\/,illegal:\/[^\\s:]\/,contains:[e.TITLE_MODE,e.C_LIN/;"	v	method:anonymousObjectbd4eea9e25005.create
@@ -8137,5 +8222,6 @@ variants	remark-latest.min.js	/^},{className:"meta",begin:"#\\\\!?\\\\[",end:"\\
 version	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	property:t.exports
 void	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	M	class:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.AnonymousClassbd4eea9e6eb01
 width	remark-latest.min.js	/^containerLayout:'<div class="remark-notes-area">\\n  <div class="remark-top-area">\\n    <div cl/;"	p	variable:anonymousFunctionbd4eea9e6f400.s.t
+xlink	content/high-level-overview.svg	/^ --><!-- Title: rustc_areas Pages: 1 --><svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink=/;"	n	uri:http://www.w3.org/1999/xlink
 y	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	f	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r
 y	remark-latest.min.js	/^beginKeywords:"class interface",end:\/[{;=]\/,illegal:\/[^\\s:]\/,contains:[e.TITLE_MODE,e.C_LIN/;"	v	method:anonymousObjectbd4eea9e21405.create
