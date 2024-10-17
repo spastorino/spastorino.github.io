@@ -216,6 +216,7 @@
 <	remark-latest.min.js	/^a.relevance>r.relevance&&(s=r,r=a)}),s.language&&(r.second_best=s),r}function u(e){return N.tabR/;"	p	variable:anonymousObjectbd4eea9e8005
 >	remark-latest.min.js	/^a.relevance>r.relevance&&(s=r,r=a)}),s.language&&(r.second_best=s),r}function u(e){return N.tabR/;"	p	variable:anonymousObjectbd4eea9e8005
 AnonymousClassbd4eea9e6eb01	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	c	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r
+Background	exercises/bug-unchecked-unsafety.md	/^## Background$/;"	s
 Background	exercises/diag-diff-methods-assoc-fns.md	/^## Background$/;"	s
 Background	exercises/diag-more-acc-span.md	/^## Background$/;"	s
 Background	exercises/feat-machine-applicable-lint.md	/^## Background$/;"	s
@@ -225,6 +226,9 @@ Background	exercises/ice-mutable-const.md	/^## Background$/;"	s
 Background	exercises/ice-no-fn_arg_names.md	/^## Background$/;"	s
 Background	exercises/ice-rpitit-no-body.md	/^## Background$/;"	s
 Background	exercises/ice-trait-no-impl-rpitit.md	/^## Background$/;"	s
+Background	exercises/ice-unexpected-non-type.md	/^## Background$/;"	s
+Background	exercises/ice-variadic-mismatch.md	/^## Background$/;"	s
+Branch	exercises/bug-unchecked-unsafety.md	/^## Branch$/;"	s
 Branch	exercises/diag-diff-methods-assoc-fns.md	/^## Branch$/;"	s
 Branch	exercises/diag-more-acc-span.md	/^## Branch$/;"	s
 Branch	exercises/feat-machine-applicable-lint.md	/^## Branch$/;"	s
@@ -234,6 +238,8 @@ Branch	exercises/ice-mutable-const.md	/^## Branch$/;"	s
 Branch	exercises/ice-no-fn_arg_names.md	/^## Branch$/;"	s
 Branch	exercises/ice-rpitit-no-body.md	/^## Branch$/;"	s
 Branch	exercises/ice-trait-no-impl-rpitit.md	/^## Branch$/;"	s
+Branch	exercises/ice-unexpected-non-type.md	/^## Branch$/;"	s
+Branch	exercises/ice-variadic-mismatch.md	/^## Branch$/;"	s
 C	remark-latest.min.js	/^beginKeywords:"class interface",end:\/[{;=]\/,illegal:\/[^\\s:]\/,contains:[e.TITLE_MODE,e.C_LIN/;"	v	method:anonymousObjectbd4eea9e21405.create
 CODE	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
 CONTENT	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
@@ -246,7 +252,6 @@ E	remark-latest.min.js	/^beginKeywords:"class interface",end:\/[{;=]\/,illegal:\
 Editor	content/slides.md	/^# Editor$/;"	c
 Exercises	content/slides.md	/^# Exercises$/;"	c
 FENCES	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
-Getting started	content/slides.md	/^# Getting started$/;"	c
 How did we get started?	content/slides.md	/^# How did we get started?$/;"	c
 INLINE_CODE	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
 MACRO	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
@@ -255,12 +260,16 @@ Objectives	content/slides.md	/^# Objectives$/;"	c
 Overview of the compiler	content/slides.md	/^# Overview of the compiler$/;"	c
 Prerequisites and requirements	content/slides.md	/^# Prerequisites and requirements$/;"	c
 Quickstart	content/slides.md	/^# Quickstart$/;"	c
+Rustc Dev Guide	content/slides.md	/^# Rustc Dev Guide$/;"	c
 S	remark-latest.min.js	/^beginKeywords:"class interface",end:\/[{;=]\/,illegal:\/[^\\s:]\/,contains:[e.TITLE_MODE,e.C_LIN/;"	v	method:anonymousObjectbd4eea9e21405.create
 SEPARATOR	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
+Test	exercises/bug-unchecked-unsafety.md	/^## Test$/;"	s
 Test	exercises/ice-mutable-const.md	/^## Test$/;"	s
 Test	exercises/ice-no-fn_arg_names.md	/^## Test$/;"	s
 Test	exercises/ice-rpitit-no-body.md	/^## Test$/;"	s
 Test	exercises/ice-trait-no-impl-rpitit.md	/^## Test$/;"	s
+Test	exercises/ice-unexpected-non-type.md	/^## Test$/;"	s
+Test	exercises/ice-variadic-mismatch.md	/^## Test$/;"	s
 Thanks	content/slides.md	/^# Thanks$/;"	c
 Tracing	content/slides.md	/^# Tracing$/;"	c
 What's next for me?	content/slides.md	/^# What's next for me?$/;"	c

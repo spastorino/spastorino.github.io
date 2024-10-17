@@ -11,6 +11,7 @@ count: false
 
 [![Slides repo](content/qr.jpg)](https://github.com/spastorino/contributing-to-rustc)
 
+https://santiagopastorino.com/contributing-to-rustc<br>
 https://github.com/spastorino/contributing-to-rustc
 
 ???
@@ -23,13 +24,13 @@ https://github.com/spastorino/contributing-to-rustc
 
 # Objectives
 
-- Give you the motivation, tools and willingness to become a contributor
+- Learn by doing
+- We want you to become a contributor
+- Get excited about contributing
 
 ???
 
-- Get excited about contributing
-- This is a hands on workshop
-- Where you would learn by doing
+- Hands on workshop
 - It takes a LOT of time to really learn the compiler and probably nobody understands it all
 
 ---
@@ -41,19 +42,6 @@ https://github.com/spastorino/contributing-to-rustc
 ???
 
 Share our experience about how and why did we get into the compiler
-
----
-
-# Getting started
-
-.center[[![Rustc Dev Guide](content/rustc-dev-guide.png)](https://rustc-dev-guide.rust-lang.org/)]
-
-.center[https://rustc-dev-guide.rust-lang.org/]
-
-???
-
-- You would find everything you need in the Rustc Dev Guide
-- Take one minute to open the guide and navigate it together
 
 ---
 
@@ -73,6 +61,19 @@ Share our experience about how and why did we get into the compiler
 - Did you get a message with these instructions?
 - Did you all do this already?
 - Don't worry if you didn't
+
+---
+
+# Editor
+
+Most popular IDE for rustc development is VS Code
+
+https://rustc-dev-guide.rust-lang.org/building/suggested.html#configuring-rust-analyzer-for-rustc
+
+???
+
+- There are instructions to set up rust-analyzer for vscode
+- Use whatever you feel more comfortable with
 
 ---
 
@@ -96,16 +97,16 @@ cd contributing-to-rustc-exercises
 
 ---
 
-# Editor
+# Rustc Dev Guide
 
-Most popular IDE for rustc development is VS Code
+.center[[![Rustc Dev Guide](content/rustc-dev-guide.png)](https://rustc-dev-guide.rust-lang.org/)]
 
-https://rustc-dev-guide.rust-lang.org/building/suggested.html#configuring-rust-analyzer-for-rustc
+.center[https://rustc-dev-guide.rust-lang.org/]
 
 ???
 
-- There are instructions to set up rust-analyzer for vscode
-- Use whatever you feel more comfortable with
+- You would find everything you need in the Rustc Dev Guide
+- Take one minute to open the guide and navigate it together
 
 ---
 
@@ -202,8 +203,6 @@ class: medium
   - [Differentiate between methods and associated functions in diagnostics](https://github.com/spastorino/contributing-to-rustc/blob/main/exercises/diag-diff-methods-assoc-fns.md)
 - Features
   - [Pineapple on pizza not allowed](https://github.com/spastorino/contributing-to-rustc/blob/main/exercises/feat-pinneaple-pizza.md)
-  - [Add machine applicable lint to Unsafe extern blocks so items can be automatic upgrade to be unsafe](https://github.com/spastorino/contributing-to-rustc/blob/main/exercises/feat-machine-applicable-lint.md)
-  - [Unsafe Extern Blocks](https://github.com/spastorino/contributing-to-rustc/blob/main/exercises/feat-unsafe-extern-blocks.md)
 
 ???
 
