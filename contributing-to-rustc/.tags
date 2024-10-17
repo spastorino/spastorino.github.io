@@ -134,6 +134,7 @@
 .footnote	style.css	/^.footnote,$/;"	c
 .goldnordelish	style.css	/^.goldnordelish {$/;"	c
 .gologo img	style.css	/^.gologo img {$/;"	s
+.gosim	style.css	/^.gosim {$/;"	c
 .grey	style.css	/^.grey {$/;"	c
 .group	style.css	/^.group {}$/;"	c
 .hidden	style.css	/^.hidden {$/;"	c
@@ -243,6 +244,7 @@ Branch	exercises/ice-variadic-mismatch.md	/^## Branch$/;"	s
 C	remark-latest.min.js	/^beginKeywords:"class interface",end:\/[{;=]\/,illegal:\/[^\\s:]\/,contains:[e.TITLE_MODE,e.C_LIN/;"	v	method:anonymousObjectbd4eea9e21405.create
 CODE	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
 CONTENT	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
+Contributing to the Rust Compiler Workshop	README.md	/^# Contributing to the Rust Compiler Workshop$/;"	c
 Contributing to the Rust Compiler Workshop	content/slides.md	/^# Contributing to the Rust Compiler Workshop$/;"	c
 Contributing to the Rust Compiler Workshop - Santiago Pastorino & Jack Huey	index.html	/^    <title>Contributing to the Rust Compiler Workshop - Santiago Pastorino & Jack Huey<\/title>$/;"	j
 DEF	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
