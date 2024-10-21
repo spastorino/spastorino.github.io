@@ -134,7 +134,6 @@
 .footnote	style.css	/^.footnote,$/;"	c
 .goldnordelish	style.css	/^.goldnordelish {$/;"	c
 .gologo img	style.css	/^.gologo img {$/;"	s
-.gosim	style.css	/^.gosim {$/;"	c
 .grey	style.css	/^.grey {$/;"	c
 .group	style.css	/^.group {}$/;"	c
 .hidden	style.css	/^.hidden {$/;"	c
@@ -226,9 +225,9 @@ Background	exercises/feat-unsafe-extern-blocks.md	/^## Background$/;"	s
 Background	exercises/ice-mutable-const.md	/^## Background$/;"	s
 Background	exercises/ice-no-fn_arg_names.md	/^## Background$/;"	s
 Background	exercises/ice-rpitit-no-body.md	/^## Background$/;"	s
-Background	exercises/ice-trait-no-impl-rpitit.md	/^## Background$/;"	s
 Background	exercises/ice-unexpected-non-type.md	/^## Background$/;"	s
 Background	exercises/ice-variadic-mismatch.md	/^## Background$/;"	s
+Background	exercises/ice-wf-control-flow.md	/^## Background$/;"	s
 Branch	exercises/bug-unchecked-unsafety.md	/^## Branch$/;"	s
 Branch	exercises/diag-diff-methods-assoc-fns.md	/^## Branch$/;"	s
 Branch	exercises/diag-more-acc-span.md	/^## Branch$/;"	s
@@ -238,9 +237,9 @@ Branch	exercises/feat-unsafe-extern-blocks.md	/^## Branch$/;"	s
 Branch	exercises/ice-mutable-const.md	/^## Branch$/;"	s
 Branch	exercises/ice-no-fn_arg_names.md	/^## Branch$/;"	s
 Branch	exercises/ice-rpitit-no-body.md	/^## Branch$/;"	s
-Branch	exercises/ice-trait-no-impl-rpitit.md	/^## Branch$/;"	s
 Branch	exercises/ice-unexpected-non-type.md	/^## Branch$/;"	s
 Branch	exercises/ice-variadic-mismatch.md	/^## Branch$/;"	s
+Branch	exercises/ice-wf-control-flow.md	/^## Branch$/;"	s
 C	remark-latest.min.js	/^beginKeywords:"class interface",end:\/[{;=]\/,illegal:\/[^\\s:]\/,contains:[e.TITLE_MODE,e.C_LIN/;"	v	method:anonymousObjectbd4eea9e21405.create
 CODE	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
 CONTENT	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
@@ -254,6 +253,12 @@ E	remark-latest.min.js	/^beginKeywords:"class interface",end:\/[{;=]\/,illegal:\
 Editor	content/slides.md	/^# Editor$/;"	c
 Exercises	content/slides.md	/^# Exercises$/;"	c
 FENCES	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
+Failing Test	exercises/diag-more-acc-span.md	/^## Failing Test$/;"	s
+Failing Test	exercises/ice-mutable-const.md	/^## Failing Test$/;"	s
+Failing Test	exercises/ice-no-fn_arg_names.md	/^## Failing Test$/;"	s
+Failing Test	exercises/ice-rpitit-no-body.md	/^## Failing Test$/;"	s
+Failing Test	exercises/ice-wf-control-flow.md	/^## Failing Test$/;"	s
+Failing Tests	exercises/diag-diff-methods-assoc-fns.md	/^## Failing Tests$/;"	s
 How did we get started?	content/slides.md	/^# How did we get started?$/;"	c
 INLINE_CODE	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
 MACRO	remark-latest.min.js	/^"solarized-dark":".hljs-solarized-dark .hljs{display:block;overflow-x:auto;padding:.5em;backgrou/;"	p	variable:anonymousFunctionbd4eea9e6700.anonymousFunctionbd4eea9e6b00.c.r.anonymousObjectbd4eea9e6c405
@@ -269,9 +274,9 @@ Test	exercises/bug-unchecked-unsafety.md	/^## Test$/;"	s
 Test	exercises/ice-mutable-const.md	/^## Test$/;"	s
 Test	exercises/ice-no-fn_arg_names.md	/^## Test$/;"	s
 Test	exercises/ice-rpitit-no-body.md	/^## Test$/;"	s
-Test	exercises/ice-trait-no-impl-rpitit.md	/^## Test$/;"	s
 Test	exercises/ice-unexpected-non-type.md	/^## Test$/;"	s
 Test	exercises/ice-variadic-mismatch.md	/^## Test$/;"	s
+Test	exercises/ice-wf-control-flow.md	/^## Test$/;"	s
 Thanks	content/slides.md	/^# Thanks$/;"	c
 Tracing	content/slides.md	/^# Tracing$/;"	c
 What's next for me?	content/slides.md	/^# What's next for me?$/;"	c
