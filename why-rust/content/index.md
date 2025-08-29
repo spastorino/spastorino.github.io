@@ -429,6 +429,23 @@ gift := <- channel
 
 ---
 
+# What went wrong?
+
+Two ingredients:
+
+- Mutation
+- Sharing
+
+--
+
+Rust's solution:
+
+- Ownership and borrowing
+- Support sharing and mutation
+  - but **not at the same time**
+
+---
+
 # Rust lets you take away
 
 ```rust
@@ -605,30 +622,6 @@ error[E0382]: use of moved value: 'gift'
 
 ---
 
-# What went wrong?
-
-Two ingredients:
-
-- Mutation
-- Sharing
-
---
-
-Rust's solution:
-
-- Ownership and borrowing
-- Support sharing and mutation
-  - but **not at the same time**
-
-???
-
-- Prevents bugs, double free, dangling pointers, null references and buffer overflows.
-- Instead of relying on a garbage collector, it uses an ownership system with strict compile-time checks.
-- The compiler enforces rules to prevent data races at compile time.
-- Makes multithreaded programming much safer and easier.
-
----
-
 # Memory safety: a strict compiler
 
 - It can take some time until your program compiles
@@ -641,6 +634,13 @@ However:
 - Far less debugging
     - No data races!
 - Refactoring is safe and painless
+
+???
+
+- Prevents bugs, double free, dangling pointers, null references and buffer overflows.
+- Instead of relying on a garbage collector, it uses an ownership system with strict compile-time checks.
+- The compiler enforces rules to prevent data races at compile time.
+- Makes multithreaded programming much safer and easier.
 
 ---
 
