@@ -4,27 +4,29 @@ count: false
 
 <img src="content/images/rust-logo-blk.svg" alt="Rust logo" width="250rem" height="auto">
 
-# Intro to Rust Workshop
+# Intro to Rust
 
 .grey[Santiago Pastorino]
 
----
-
-# About me
-
-- WyeWorks co-founder
-- Member of Rust compiler contributors team
-- Rust Latam conference organizer
-- Rust Montevideo Meetup organizer
-- Ruby on Rails core alumni
+.grey[.smaller[WyeWorks co-founder | Rust compiler and types team member]]
 
 ---
 
-# About the workshop
+<img src="content/images/rust-logo-blk.svg" alt="Rust logo" width="250rem" height="auto" style="position: absolute; right: 0rem; margin-top: -2rem;">
 
-- We'll cover the basics
-  - Assumes some familiarity with some systems programming concepts.
-  - Feel free to stop me at any time.
+# Objectives
+
+- Memory Layout & Memory Safety
+- Rust Key Concepts
+  - Ownership
+  - Borrowing
+  - Lifetimes
+- Other type system features
+
+???
+
+- Conceptual talk
+- Not going to explain syntax or focus on it
 
 ---
 
@@ -32,273 +34,22 @@ count: false
 
 # What is Rust?
 
-- "New" & safe systems programming language
-  - Developed by Mozilla research, v1.0 released in 2015
+- Modern & safe systems programming language
+  - Originally developed by Mozilla research
+  - v1.0 released in 2015
+- Emphasizing performance, type safety, and concurrency
 - Multiparadigm
-  - Imperative, structured, functional, concurrent, generic, compiled
-- Static strong typing
-  - Inference
-- Emphasizing control, safety, and speed
+  - Ideas from FP, immutability, higher-order functions, algebraic data types, and pattern matching.
+  - Also supports OOP via structs, enums, traits, and methods.
+- Compiled, powerful type system, statically typed, type inference, generics
 - Free and open-source software, MIT License or Apache License 2.0
-- Most loved programming language (2016, 2017, 2018 & 2019)
 
----
+???
 
-# Why Rust?
-
-- Performance
-- Reliability
-- Productivity
-
----
-
-# Performance
-
-Rust is **blazingly fast** and **memory-efficient**: with **no runtime or garbage collector**, it can power performance-critical services, run on embedded devices, and easily integrate with other languages.
-
----
-
-# Reliability
-
-Rust’s **rich type system and ownership** model guarantee **memory-safety and thread-safety** — and enable you to eliminate many classes of bugs at compile-time.
-
----
-
-# Productivity
-
-Rust has **great documentation**, a **friendly compiler** with useful error messages, and **top-notch tooling** — an integrated package manager and build tool, smart multi-editor support with auto-completion and type inspections, an auto-formatter, and more.
-
----
-
-# Who is using Rust?
-
-- **Mozilla** - Stylo, WebRender, Rustc.
-- **Google** - Fuschia operating system.
-- **Facebook** - Mercurial rewrite.
-- **Amazon** - Firecracker.
-- **Microsoft** - Azure IoT work.
-- **Dropbox** - Storage system.
-- **Redox OS** - Most complete Rust OS, microkernel design.
-
-You can see even more familiar names like **Twitter**, **npm**, **Red Hat**, **Reddit**, **Samsung**, **Cloudflare**, **Gnome**, **Chef**, **Canonical**, **Coursera**, **Tor** and many more.
-
----
-
-# What is Rust being used for?
-
-- Operating Systems
-- Browsers
-- Address hot spots of your app (Python, Ruby, Elixir, JavaScript)
-- WebAssembly
-- Web APIs
-- Networking, Blockchain
-- Embedded, Microcontrollers, IoT
-- Games
-
----
-
-# Installation
-
-- Install Rust using [https://rustup.rs](https://rustup.rs) or any other way.
-  - `curl https://sh.rustup.rs -sSf | sh`
-  - Run `rustc -V` to see if you’re golden.
-- Ensure you have git installed
-- `git clone https://github.com/spastorino/intro-to-rust.git`
-- You can also follow along using https://play.rust-lang.org/
-
----
-
-# Installation
-
-- rustup --version
-  - Rust toolchain installer; enables you to easily switch between Rust
-    versions
-- rustc --version
-  - The Rust compiler, you'll be using it most of the time through cargo
-- cargo --version
-  - The Rust package manager; downloads and compiles your code and dependencies for you
-
----
-
-# Create a project with cargo
-
-```shell
-# Create a minimal skeleton for a new application (--lib for libraries)
-$ cargo new myapp
-
-# Inspect the skeleton app
-$ cd myapp
-
-# Builds the binary app
-$ cargo build
-
-# Builds and run the binary app
-$ cargo run
-
-# => Hello, world!
-
-# Builds and tests app
-$ cargo test
-
-# Generate Rustdoc and open it in the browser
-$ cargo doc --open
-```
-
----
-
-# Functions
-
-```rust
-fn add_numbers(x: i32, y: i32) -> i32 {
-    x + y
-}
-
-fn main() {
-    let x = 10;
-    let y = 15;
-
-    let z = add_numbers(x, y);
-    // format string using Display trait and print it
-    println!("{} + {} = {}", x, y, z);
-}
-```
-
----
-
-# Control flow
-
-```rust
-fn main() {
-    // Bindings are immutable by default
-    let mut value = 4;
-
-    for i in 0..=100 {
-        if value % 2 == 0 {
-            while value < 10 {
-                value += i;
-            }
-            // ...
-            continue;
-        } else if value == 11 {
-            // ...
-            break;
-        } else {
-            /* ... */
-        }
-    }
-}
-```
-
----
-
-# Exercise 1 (warm up)
-
-- Go to this `intro-to-rust/exercises/1_control_flow` project
-- Try running `cargo test`
-- Make tests pass :)
-- Run `cargo run` and check that it prints all the leap years since 1000
-  until 2000
-
----
-
-# Structs
-
-```rust
-struct Location {
-    longitude: f32,
-    latitude: f32,
-}
-
-impl Location {
-    fn new(longitude: f32, latitude: f32) -> Location {
-        Location { longitude, latitude }
-    }
-
-    fn longitude(&self) -> f32 {
-        self.longitude
-    }
-
-    fn latitude(&self) -> f32 {
-        self.latitude
-    }
-
-    fn move_location(&mut self, other: Location) {
-        self.longitude += other.longitude();
-        self.latitude += other.latitude();
-    }
-}
-```
-
----
-
-# Enums
-
-```rust
-struct Location {
-    longitude: f32,
-    latitude: f32,
-}
-
-struct Map {
-    pin: Option<Location>,
-    weather: Weather,
-}
-
-enum Weather {
-    Sunny,
-    Windy,
-    Rainy,
-    Snowy,
-}
-```
-
----
-
-# Match
-
-```rust
-fn main() {
-    let weather = Weather::Sunny;
-
-    match weather {
-        Weather::Sunny => {
-            println!("Let's go out!!!");
-        }
-
-        Weather::Windy | Weather::Rainy | Weather::Snowy => {
-            println!("Let's stay home!!!");
-        }
-    }
-}
-```
-
----
-
-# Match
-
-```rust
-fn main() {
-    let weather = Weather::Sunny;
-
-    match weather {
-        Weather::Sunny => {
-            println!("Let's go out!!!");
-        }
-
-        // Be careful with catch-all
-        _ => {
-            println!("Let's stay home!!!");
-        }
-    }
-}
-```
-
----
-
-# Exercise 2
-
-- Go to this `intro-to-rust/exercises/2_structs_enums` project
-- Open `src/main.rs` you will find guidance there
+- Mozilla research -> Firefox and Servo
+- Safety without GC, all references point to valid memory, Borrow Checker
+- Multiparadigm, influenced by functional programming
+- Type inference, almost never write types. Only for definitions. Local vs Global Inference, Stability and explicit contracts APIs, Generics, Error messages, compiler complexity, etc
 
 ---
 
@@ -306,7 +57,7 @@ fn main() {
 
 - No segmentation faults
 - No double free
-- No dangling pointers
+- No use after free (dangling pointers)
 - No iterator invalidation
 - No buffer overflows
 - No undefined behavior
@@ -322,11 +73,154 @@ fn main() {
 
 ---
 
+# Memory Layout
+
+- stack: stores local variables
+- heap: dynamic memory for programmer to allocate
+- data: stores global variables, separated into initialized and uninitialized
+- text: stores the code being executed
+
+<img src="content/images/memory_layout.png" alt="Memory Layout" width="250em">
+
+???
+
+- Each running program has its own memory layout, separated from other programs.
+- The layout consists of a lot of segments, including ...
+
+---
+
+## The Stack
+
+- Region of memory that stores function calls, local variables, and control flow.
+- Automatic allocation & deallocation → when a function is called, its local variables are pushed; when it returns, they’re popped.
+- Fast access, but limited size.
+- Variables must be known at compile time (size fixed).
+
+???
+
+- Every time a function is called, the machine allocates a stack frame.
+- Push to the stack each local var. There are more things pushed to stack, to simplify locals :).
+- After the function returns, the stack frame is decallocated. So all variables become invalid.
+
+---
+
+## The Stack
+
+<img src="content/images/stack1.png" alt="Stack 1" width="500em">
+
+---
+
+## The Stack
+
+<img src="content/images/stack2.png" alt="Stack 2" width="500em">
+
+---
+
+## The Stack
+
+<img src="content/images/stack3.png" alt="Stack 3" width="500em">
+
+---
+
+## The Stack
+
+<img src="content/images/stack4.png" alt="Stack 4" width="500em">
+
+---
+
+## The Stack
+
+<img src="content/images/stack5.png" alt="Stack 5" width="500em">
+
+---
+
+## The Stack
+
+<img src="content/images/stack6.png" alt="Stack 6" width="500em">
+
+---
+
+## The Stack
+
+<img src="content/images/stack7.png" alt="Stack 7" width="500em">
+
+---
+
+## The Stack
+
+<img src="content/images/stack8.png" alt="Stack 8" width="500em">
+
+---
+
+## The Heap
+
+- Region of memory for dynamic allocation (objects, arrays, structures).
+- Managed manually (e.g., malloc/free in C, new/delete in C++, garbage collector in Java/Python).
+- Slower than stack, but much bigger and flexible.
+- Can live beyond the function scope (until explicitly freed or collected).
+
+???
+
+- Store things more permanent, longer than a function call without copying.
+- Store dynamic memory
+- Manually malloc/free
+- Potential memory leaks, double free, use after free, etc
+
+---
+
+## The Heap
+
+<img src="content/images/heap1.png" alt="Heap 1" width="500em">
+
+---
+
+## The Heap
+
+<img src="content/images/heap2.png" alt="Heap 2" width="500em">
+
+---
+
+## The Heap
+
+<img src="content/images/heap3.png" alt="Heap 3" width="500em">
+
+---
+
+## The Heap
+
+<img src="content/images/heap4.png" alt="Heap 4" width="500em">
+
+---
+
+## The Heap
+
+<img src="content/images/heap5.png" alt="Heap 5" width="500em">
+
+---
+
+## The Heap
+
+<img src="content/images/heap6.png" alt="Heap 6" width="500em">
+
+---
+
+## The Heap
+
+<img src="content/images/heap7.png" alt="Heap 7" width="500em">
+
+---
+
+## The Heap
+
+<img src="content/images/heap8.png" alt="Heap 8" width="500em">
+
+---
+
 # "Manual" memory management in Rust:
 
 - Values **owned** by creator.
 - Values **moved** via assignment.
-- When final owner returns, **value is freed**.
+- When final owner returns, **value and resources are freed**.
 
 All this feels invisible and prevents _double free_ errors, _use after free_ errors and _memory leaks_.
 
@@ -335,6 +229,14 @@ All this feels invisible and prevents _double free_ errors, _use after free_ err
 - Move semantics / RAII
 - Rust enforces the RAII discipline
 - Variables can own resources
+
+---
+
+# Ownership
+
+- Each value in Rust has an owner.
+- There can only be one owner at a time.
+- When the owner goes out of scope, the value will be dropped.
 
 ---
 
@@ -350,6 +252,11 @@ fn main() {
 /// eat function takes ownership of the apple
 fn eat(apple_2: Apple) {}
 ```
+
+???
+
+- Ownership is a set of rules that govern how a Rust program manages memory
+- Rules
 
 ---
 
@@ -485,10 +392,106 @@ fn deliver(bag: Vec<Apple>) {
 
 ---
 
-# Exercise 3
+# Move semantics
 
-- Go to this `intro-to-rust/exercises/3_ownership/src` project
-- Open `src/main.rs` you will find guidance there
+```rust
+fn foo() {
+    let x = 5;
+    let y = x;
+
+    println!("{x}");
+    println!("{y}");
+}
+```
+
+- Bind the value 5 to x
+- Copy the value in x and bind it to y
+- 2 variables, x and y, both equal 5
+
+???
+
+- This is indeed what is happening, because integers are simple values with a known, fixed size, and these two 5 values are pushed onto the stack.
+
+---
+
+# Move semantics
+
+```rust
+fn foo() {
+    let s1 = String::from("hello");
+    let s2 = s1;
+
+    println!("{s1}");
+    println!("{s2}");
+}
+```
+
+- Does this works the same way?
+
+--
+
+<img src="content/images/string1.svg" alt="string 1" width="250em">
+
+---
+
+# Move semantics
+
+```rust
+fn foo() {
+    let s1 = String::from("hello");
+    let s2 = s1;
+
+    println!("{s1}");
+    println!("{s2}");
+}
+```
+
+- This is **not** what happens
+
+<img src="content/images/string2.svg" alt="string 2" width="180em">
+
+---
+
+# Move semantics
+
+```rust
+fn foo() {
+    let s1 = String::from("hello");
+    let s2 = s1;
+
+    println!("{s1}");
+    println!("{s2}");
+}
+```
+
+<img src="content/images/string3.svg" alt="string 3" width="250em">
+
+???
+
+- This is what happens but we've said that there's only one owner.
+- So ...
+
+---
+
+# Move semantics
+
+```rust
+fn foo() {
+    let s1 = String::from("hello");
+    let s2 = s1; // s1 moved here
+
+    println!("{s1}"); // can't access moved value
+    println!("{s2}");
+}
+```
+
+<img src="content/images/string4.svg" alt="string 4" width="250em">
+
+???
+
+- s1 is moved, no access allowed to it anymore.
+- Compilation error.
+- The value can be a simple copy value when we don't care or the value is not copy and then move semantics apply
 
 ---
 
@@ -510,6 +513,10 @@ fn weight(bag: Vec<Apple>) -> (u32, Vec<Apple>) {
     // ...
 }
 ```
+
+???
+
+- Just with ownership we would need to return things back
 
 ---
 
@@ -669,36 +676,76 @@ let mut buffer = format!("Hello");
 
 - If there's a shared reference, no writers during the **lifetime of the shared borrow**.
 - If there's a mutable reference, no other readers or writers during the **lifetime of the mutable borrow**
+- These rules are enforced by the borrow checker
 
 ---
 
-# Exercise 4
-
-- Go to this `intro-to-rust/exercises/4_borrowing/src` project
-- Open `src/main.rs` you will find guidance there
-
----
-
-# Strings (&str vs String)
-
-- &str static and read-only
-- String dynamic
+# What about concurrency?
 
 ```rust
+use std::thread;
+
 fn main() {
-    let a = "hi"; // &str
+    let mut s = String::from("Hello");
+    
+    thread::spawn(move || {
+        s.push_str(" World!");
+    });
 
-    a.push_str("something"); // compile error
-
-    let b = String::from("hi"); // String
-
-    b.push_str(" world");
+    println!("{s}");
 }
+```
+
+---
+
+# What about concurrency?
+
+- Same principles apply
+
+```code
+error[E0382]: borrow of moved value: `s`
+  --> src/main.rs:10:16
+   |
+ 4 |     let mut `s` = String::from("Hello");
+   |         ----- move occurs because `s` has type String, which does not implement the Copy trait
+ 5 |     
+ 6 |     thread::spawn(move || {
+   |                   ------- value moved into closure here
+ 7 |         `s`.push_str(" World!");
+   |          - variable moved due to use in closure
+...
+10 |     println!("{`s`}");
 ```
 
 ???
 
-UTF-8
+- Nothing special about it.
+
+---
+
+# No null pointers
+
+```rust
+fn print_first(v: Vec<String>) {
+  let s = v.first();
+  println!("{}", s.to_uppercase());
+}
+```
+
+--
+
+```code
+error[E0599]: no method named `to_uppercase` found for enum `Option`
+       in the current scope
+   --> src/main.rs:3:20
+    |
+3   |   println!("{}", s.to_uppercase());
+    |                    ^^^^^^^^^^^^ method not found in `Option<&String>`
+    |
+note: the method `to_uppercase` exists on the type `&String`
+
+For more information about this error, try `rustc --explain E0599`.
+```
 
 ---
 
@@ -718,10 +765,10 @@ enum Option<T> {
 
 ```rust
 fn print_first(v: Vec<String>) {
-    match v.first() {
-        Some(elem) => println!("{}", elem),
-        None => println!("Not found"),
-    }
+  match v.first() {
+    Some(s) => println!("{}", s.to_uppercase()),
+    None => println!("Not found"),
+  }
 }
 ```
 
@@ -764,17 +811,124 @@ fn main() {
 
 ---
 
-# Exercise 5 - Build your own shell
+# Strings (&str vs String)
 
-Write a shell which can run a single command on a separate process.
+- &str static and read-only (primitive type)
+  - Lives in the .rodata segment of memory
+- String dynamic (stdlib)
+  - Lives in the heap
 
-``` rust
+```rust
 fn main() {
-    loop {
-        // Read line from standard input
-        // "Parse" line into executable command
-        // Execute the command in a separate process
-        // Show output
+    let a = "hi"; // &str
+
+    a.push_str("something"); // compile error
+
+    let b = String::from("hi"); // String
+
+    b.push_str(" world");
+}
+```
+
+???
+
+- UTF-8
+- str think of it as struct str([u8])
+- String a Vec<u8>
+
+---
+
+# Generics
+
+```rust
+struct Point<T> {
+    x: T,
+    y: T,
+}
+
+impl<T> Point<T> {
+    fn x(&self) -> &T {
+        &self.x
+    }
+}
+
+fn main() {
+    let p = Point { x: 5, y: 10 };
+
+    println!("p.x = {}", p.x());
+}
+```
+
+???
+
+- Performance: monomorphization
+
+---
+
+# Traits
+
+```rust
+pub trait Summary {
+    fn summarize(&self) -> String;
+}
+
+pub struct NewsArticle {
+    pub headline: String,
+    pub location: String,
+    pub author: String,
+    pub content: String,
+}
+
+impl Summary for NewsArticle {
+    fn summarize(&self) -> String {
+        format!("{}, by {} ({})", self.headline, self.author, self.location)
     }
 }
 ```
+
+---
+
+# Iterator & closures
+
+```rust
+fn main() {
+    let v1: Vec<i32> = vec![1, 2, 3];
+
+    let v2: Vec<_> = v1.iter().map(|x| x + 1).collect();
+
+    assert_eq!(v2, vec![2, 3, 4]);
+}
+```
+
+???
+
+- Closures capture upvars from environment
+- Rust iterator and fp concepts: is a monad, applicative and functor 
+
+---
+
+# Smart pointers
+
+- Box<T>, Rc<T>, Arc<T>, Ref<T>, RefMut<T>, etc
+- Box<T> to store data in the heap
+- Dereferences using `*` like normal refereces because implements Deref trait
+
+```rust
+fn main() {
+    let b = Box::new(5);
+    println!("b = {b}");
+}
+```
+
+---
+
+class: center
+name: title
+count: false
+
+<img src="content/images/rust-logo-blk.svg" alt="Rust logo" width="250rem" height="auto">
+
+# Thanks
+
+.grey[Github/Everywhere: spastorino]<br/>
+.grey[Email: spastorino@gmail.com]
